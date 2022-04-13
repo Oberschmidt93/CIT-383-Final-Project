@@ -79,7 +79,11 @@ RANGE=1.0   # the maximum variation %age above/below NOMINAL
 #the blinds are already closed (return dutycycle variable and check its value?)
 
 while True:
-    blindControl(API, LOCATION_ID)
-    time.sleep(30)
+    #blindControl(API, LOCATION_ID)
+    #time.sleep(30)
+    openBlinds()
+    time.sleep(5)
+    closeBlinds()
+    time.sleep(5)
 
 
